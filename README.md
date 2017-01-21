@@ -2,6 +2,7 @@
 Team Members: Michael Smith, Vu Chau, Fang-Chen Liu, Hsun-An Chih
 
 HW1: Specifying a Web Application
+
 •	An executive overview of the problem 
 
 •	A study of users including personas
