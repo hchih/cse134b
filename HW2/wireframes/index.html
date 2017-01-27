@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Browse All Games : BoardGameDex</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">BoardGameDex</a></h1>
+        <nav>
+            <ul>
+                <li><a href="screen2_login.html">Log In</a></li>
+                <li><a href="screen3_login.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <header>
+            <h2>Browse All Games</h2>
+            <nav>
+                <form>
+                    <fieldset>
+                        <legend>Filter</legend>
+                        <div>
+                            <label>Keyword <input type="text"/></label>
+                        </div>
+                        <div>
+                            <label>Player Count <input type="text" size="3"/></label>
+                            <label>to <input type="text" size="3"/></label>
+                        </div>
+                        <div>
+                            <label>Play Time <input type="text" size="3"/></label>
+                            <label>to <input type="text" size="3"/> hours</label>
+                        </div>
+                        <div>
+                            <label>
+                                Genres
+                                <br/>
+                                <select multiple="multiple" size="5">
+                                    <option selected="selected">Family</option>
+                                    <option selected="selected">Thematic</option>
+                                    <option>Card-based</option>
+                                    <option>Combat</option>
+                                    <option>Social deducation</option>
+                                </select>
+                            </label>
+                        </div>
+                    </fieldset>
+                </form>
+            </nav>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Game</th>
+                    <th>Genre</th>
+                    <th>Avg Rating</th>
+                    <th>Player Count</th>
+                    <th>Est Play Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="screen9_game.html">
+                            <img src="#" alt="[photo]"/>Monopoly
+                        </a>
+                    </td>
+                    <td>Family</td>
+                    <td>2.5/10</td>
+                    <td>2-8</td>
+                    <td>100 hours</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+</body>
+</html>
