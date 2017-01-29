@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Embed Tags : Testing HTML Tags</title>
+</head>
+<body>
+    <div>
+         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/42/UCSD_Seal.svg/1024px-UCSD_Seal.svg.png" alt="UCSD" height="200" width="200"/>
+    </div>
+    <div>
+        <iframe src="http://www.ucsd.edu" width="512" height="512"></iframe>
+    </div>
+    <div>
+        <object data="cough.mp3">
+            <param name="autoplay" value="true"/>
+        </object>
+    </div>
+    <div>
+        <embed src="cough.mp3">
+    </div>
+    <div>
+        <video width="512" controls="controls">
+          <source src="cat.mp4" type="video/mp4"/>
+          <track kind="subtitles" src="cat.vtt" srclang="en" label="English"/>
+          Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div>
+        Aaaaah <audio src="aah.mp3" controls="controls">You're missing audio support!</audio>
+    </div>
+    <div>
+        <img src="Angry.jpg" alt="anger" usemap="#anger"/>
+        <map name="anger">
+            <area shape="rect" alt="bing" coords="0,0,100,100" href="https://www.bing.com"/>
+        </map>
+        <p>Click the top-right corner of the angry face to go to BING!</p>
+    </div>
+</body>
+</html>

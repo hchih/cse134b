@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Tags : Testing HTML Tags</title>
+</head>
+<body>
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <fieldset>
+            <legend>Search Google.com</legend>
+            <label>
+                Query:
+                <input name="q" type="search" size="30" required="required"/>
+            </label>
+            <input name="ie" type="hidden" value="utf-8"/>
+            <input type="submit" value="GO!"/>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>An assortment of form controls</legend>
+            <div><label>Text: <input type="text"/></label></div>
+            <div><label>More text: <textarea rows="10"></textarea></label></div>
+            <div><label>Search: <input type="search"/></label></div>
+            <div><label>Telephone: <input type="tel"/></label></div>
+            <div><label>URL: <input type="url"/></label></div>
+            <div><label>Key: <keygen/></label></div>
+            <div><label>Email: <input type="email"/></label></div>
+            <div><label>Password: <input type="password"/></label></div>
+            <div><label>Date: <input type="date"/></label></div>
+            <div><label>Time: <input type="time"/></label></div>
+            <div><label>Number: <input type="number"/></label></div>
+            <div>
+                <label>
+                    Hair:
+                    <input list="hairlist"/>
+                    <datalist id="hairlist">
+                        <option>Some hair</option>
+                        <option>No hair</option>
+                        <option>Hair everywhere</option>
+                    </datalist>
+                </label>
+            </div>
+            <div><label>Range: <input type="range" min="3" max="382" value="127"/></label></div>
+            <div><label>Color: <input type="color"/></label></div>
+            <div><label><input type="checkbox" checked="checked"/> Checkbox</label></div>
+            <div><label><input type="radio" name="radio"/> One</label></div>
+            <div><label><input type="radio" name="radio"/> Two</label></div>
+            <div><label><input type="radio" name="radio"/> Three</label></div>
+            <div><label>File: <input type="file"/></label></div>
+            <div>
+                <label>
+                    Select one:
+                    <select>
+                        <option>--</option>
+                        <optgroup label="Months">
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                        </optgroup>
+                        <optgroup label="Numbers">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </optgroup>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Choose multiple:
+                    <select multiple="multiple">
+                        <option>Not to be</option>
+                        <option selected="selected">To be</option>
+                    </select>
+                </label>
+            </div>
+            <div><input type="submit"/></div>
+            <div><input type="reset"/></div>
+            <div><input type="button" value="Useless button #1"/></div>
+            <div><button>Useless <strong>button</strong> <em>#2</em></button></div>
+            <div><input type="image" src="Happy.jpg" alt="happy face"/></div>
+            <div><output>If this were, say, a calculator, some output might go here!</output></div>
+            <div><progress value="20" max="100">20%</progress></div>
+            <div><meter min="27" max="794" value="300">300</meter></div>
+        </fieldset>
+    </form>
+</body>
+</html>
