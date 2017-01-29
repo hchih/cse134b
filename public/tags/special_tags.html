@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set document charset -->
+    <meta charset="utf-8"/>
+    <!-- Reload the page every 3 seconds -->
+    <meta content="3" http-equiv="refresh"/>
+    <!-- Set page title -->
+    <title>Special Tags : Testing HTML Tags</title>
+    <!-- Set URL base -->
+    <base href="https://www.google.com/" target="_blank"/>
+    <!-- Alternate RSS URL (using CNN's as an example) -->
+    <link href="https://rss.cnn.com/rss/cnn_topstories.rss" rel="alternate" type="application/rss+xml"/>
+    <!-- The style tag (inline styles) -->
+    <style type="text/css">
+        body {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        This page tests out several &ldquo;special&rdquo; tags. View the source to check them out! For example, there's a &ldquo;meta&rdquo; tag that specifies the charset and an associated RSS feed via a &ldquo;link&rdquo; tag.
+    </p>
+    <p>
+        <a href="search?q=hello">This link will search Google for &ldquo;hello&rdquo;!</a> The URL is relative, but the &ldquo;base&rdquo; points it to a different origin, and causes it to open in a new tab.
+    </p>
+    <p>
+        This page will refresh every 3 seconds (thanks to a &ldquo;meta&rdquo; tag) and displays an alert when it loads (via a &ldquo;script&rdquo; tag). A &ldquo;style&rdquo; makes this text orange!
+    </p>
+    <!-- A simple script -->
+    <script type="text/javascript">
+        alert("Hello, World!");
+    </script>
+    <!-- JavaScript not supported -->
+    <noscript>
+        Your browser doesn't support JavaScript, or you've turned it off!
+    </noscript>
+</body>
+</html>
