@@ -3,16 +3,17 @@
 <head>
     <meta charset="utf-8"/>
     <title>Browse All Games : BoardGameDex</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
     <header>
-        <h1><a href="index.html">BoardGameDex</a></h1>
         <nav>
             <ul>
-                <li><a href="screen2_log_in.html">Log In</a></li>
-                <li><a href="screen3_register.html">Register</a></li>
+                <li><a href="screen2_log_in.html"><button class="primary">Log In</button></a></li>
+                <li><a href="screen3_register.html"><button>Register</button></a></li>
             </ul>
         </nav>
+        <h1><a href="index.html">BoardGameDex</a></h1>
     </header>
     <article>
         <header>
@@ -22,28 +23,29 @@
                     <fieldset>
                         <legend>Filter</legend>
                         <div>
-                            <label>Keyword <input type="text"/></label>
+                            <label for="keyword">Keyword</label>
+                            <input id="keyword" type="text"/>
                         </div>
                         <div>
-                            <label>Player Count <input type="number"/></label>
-                            <label>to <input type="number"/></label>
+                            <label for="playercount">Player Count</label>
+                            <input id="playercount" type="range"/>
                         </div>
                         <div>
-                            <label>Play Time <input type="number"/></label>
-                            <label>to <input type="number"/> hours</label>
+                            <label for="playtime">Play Time</label>
+                            <input id="playtime" type="range"/>
                         </div>
                         <div>
-                            <label>
-                                Genres
-                                <br/>
-                                <select multiple="multiple" size="5">
-                                    <option selected="selected">Family</option>
-                                    <option selected="selected">Thematic</option>
-                                    <option>Card-based</option>
-                                    <option>Combat</option>
-                                    <option>Social deducation</option>
-                                </select>
-                            </label>
+                            <label for="genres">Genres</label>
+                            <select id="genres" multiple="multiple" size="5">
+                                <option selected="selected">Family</option>
+                                <option selected="selected">Thematic</option>
+                                <option>Card-based</option>
+                                <option>Combat</option>
+                                <option>Social deducation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="mini primary">Update</button>
                         </div>
                     </fieldset>
                 </form>
@@ -71,13 +73,30 @@
                     <td>2-8</td>
                     <td>100 hours</td>
                 </tr>
+                <tr>
+                    <td>
+                        <a href="screen9_game.html">
+                            <img src="#" alt="[photo]"/>Candyland
+                        </a>
+                    </td>
+                    <td>Combat</td>
+                    <td>3.6/10</td>
+                    <td>2-5</td>
+                    <td>2 hours</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="screen9_game.html">
+                            <img src="#" alt="[photo]"/>Risk
+                        </a>
+                    </td>
+                    <td>Family</td>
+                    <td>4.2/10</td>
+                    <td>3-6</td>
+                    <td>3 hours</td>
+                </tr>
             </tbody>
         </table>
     </article>
-    <footer>
-        <hr/>
-        <p>Our <a href="team.html">team page</a> is also hosted on this site.</p>
-        <p>Check out our <a href="tags">HTML5 tests</a> as well.</p>
-    </footer>
 </body>
 </html>
