@@ -104,12 +104,9 @@ button.primary:active {
     background-image: linear-gradient(to top, #F5A630, #D65B22);
 }
 
-article > header {
-    padding-bottom: 2em;
-}
-
-article > header nav {
+article > header nav form {
     display: inline-block;
+    margin-bottom: 2em;
 }
 
 table {
@@ -185,4 +182,21 @@ fieldset button {
 
 li.active {
     font-weight: bold;
+}
+
+article > header nav {
+    width: 100%;
+}
+
+article > header nav ul {
+    margin-bottom: 1em;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+}
+
+body.loggedin > header nav ul {
+    margin-top: 1em;
 }

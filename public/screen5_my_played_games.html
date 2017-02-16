@@ -7,7 +7,6 @@
 </head>
 <body class="loggedin">
     <header>
-        <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
         <nav>
             <p><em>Welcome back, <strong>AverageUser9018</strong>!</em></p>
             <ul>
@@ -16,6 +15,8 @@
                         Browse All Games
                     </a>
                 </li>
+            </ul>
+            <ul>
                 <li class="active">
                     <a href="screen5_my_played_games.html">
                         My Played Games
@@ -41,6 +42,8 @@
                         My Invitations
                     </a>
                 </li>
+            </ul>
+            <ul>
                 <li>
                     <a href="index.html">
                         Log Out
@@ -48,43 +51,47 @@
                 </li>
             </ul>
         </nav>
+        <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
     </header>
     <article>
         <header>
             <h2>My Played Games</h2>
-            <form>
-                <fieldset>
-                    <legend>Filter</legend>
-                    <div>
-                        <label>Keyword <input type="text"/></label>
-                    </div>
-                    <div>
-                        <label>Player Count <input type="number"/></label>
-                        <label>to <input type="number"/></label>
-                    </div>
-                    <div>
-                        <label>Play Time <input type="number"/></label>
-                        <label>to <input type="number"/> hours</label>
-                    </div>
-                    <div>
-                        <label>
-                            Genres
-                            <br/>
-                            <select multiple="multiple" size="5">
+            <nav>
+                <form>
+                    <fieldset>
+                        <legend>Filter</legend>
+                        <div>
+                            <label for="keyword">Keyword</label>
+                            <input type="text"/>
+                        </div>
+                        <div>
+                            <label for="playercount">Player Count</label>
+                            <input id="playercount" type="range"/>
+                        </div>
+                        <div>
+                            <label for="playtime">Play Time</label>
+                            <input id="playtime" type="range"/>
+                        </div>
+                        <div>
+                            <label for="genres">Genres</label>
+                            <select id="genres" multiple="multiple" size="5">
                                 <option>Family</option>
                                 <option>Thematic</option>
                                 <option>Card-based</option>
                                 <option>Combat</option>
                                 <option>Social deducation</option>
                             </select>
-                        </label>
-                    </div>
-                </fieldset>
-            </form>
-            <nav>
+                        </div>
+                        <div>
+                            <button class="mini primary">Update</button>
+                        </div>
+                    </fieldset>
+                </form>
                 <ul>
                     <li>
-                        <a href="screen11_add_edit_game.html">+ Add Game</a>
+                        <a href="screen11_add_edit_game.html">
+                            <button class="mini">+ Add Game</button>
+                        </a>
                     </li>
                 </ul>
             </nav>
