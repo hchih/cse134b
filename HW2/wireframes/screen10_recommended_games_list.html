@@ -5,18 +5,21 @@
     <title>Recommended Games for &ldquo;Monopoly&rdquo; : BoardGameDex</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body>
+<body class="container">
     <header>
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
-        <nav>
-            <em>Welcome back, <strong>AverageUser9018</strong>!</em>
-            <ul>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <p class="navbar-brand" >
+                <em>Welcome back, <strong >AverageUser9018</strong>!</em></p>
+            </div>
+            <ul class="nav navbar-nav">
                 <li>
                     <a href="screen4_logged_in_home.html">
                         Browse All Games
                     </a>
                 </li>
-                <li>
+                <li >
                     <a href="screen5_my_played_games.html">
                         My Played Games
                     </a>
@@ -87,7 +90,7 @@
                                placeholder="https://boardgamedex.firebaseapp.com/..."
                                required="required"/>
                     </label>
-                    <input type="submit" value="Add Your Recommendation"/>
+                    <button class="btn btn-info" >Add Your Recommendation</button>
                 </fieldset>
             </form>
         </footer>
