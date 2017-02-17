@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8"/>
     <title>Create Invitation : BoardGameDex</title>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<body>
-    <body class="loggedin">
+<body class="loggedin">
     <header>
         <nav>
-            <p><em>Welcome back, <strong>AverageUser9018</strong>!</em></p>
+            <em>Welcome back, <strong>AverageUser9018</strong>!</em>
             <ul>
                 <li>
                     <a href="screen4_logged_in_home.html">
@@ -54,47 +53,51 @@
         </nav>
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
     </header>
-    <form action="screen12_my_invitations.html">
-        <fieldset>
-            <legend>Create Invitation</legend>
-            <fieldset>
-                <legend>Game</legend>
+    <article>
+        <form action="screen12_my_invitations.html" class="display: block">
+            <fieldset class="outer">
+                <legend>Create Invitation</legend>
+                <fieldset>
+                    <legend>Game</legend>
+                    <div>
+                        <a href="screen9_game.html"><img src="#" alt="[photo]"/>Candyland</a>
+                    </div>
+                </fieldset>
+                <fieldset class="alignfields">
+                    <legend>Scheduling</legend>
+                    <div>
+                        <label for="date">Date</label>
+                        <input id="date" type="text"/></label>
+                    </div>
+                    <div>
+                        <label for="time">Time</labeL>
+                        <input id="time" type="text"/></label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Invited People</legend>
+                    <div>
+                        <input type="email"
+                               placeholder="someone@example.com"
+                               value="alice@example.com"/>
+                        <button class="delete">&#10008;</button>
+                    </div>
+                    <div>
+                        <input type="email"
+                               placeholder="someone@example.com"
+                               value="bob@example.com"/>
+                        <button class="delete">&#10008;</button>
+                    </div>
+                    <div>
+                        <input type="email"
+                               placeholder="someone@example.com"/>
+                    </div>
+                </fieldset>
                 <div>
-                    <a href="screen9_game.html"><img src="#" alt="[photo]"/>Candyland</a>
+                    <button type="submit" class="primary">Save</button>
                 </div>
             </fieldset>
-            <fieldset>
-                <legend>Scheduling</legend>
-                <div>
-                    <label>Date <input type="text"/></label>
-                </div>
-                <div>
-                    <label>Time <input type="text"/></label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Invited People</legend>
-                <div>
-                    <input type="email"
-                           placeholder="someone@example.com"
-                           value="alice@example.com"/>
-                    <button>&#10008;</button>
-                </div>
-                <div>
-                    <input type="email"
-                           placeholder="someone@example.com"
-                           value="bob@example.com"/>
-                    <button>&#10008;</button>
-                </div>
-                <div>
-                    <input type="email"
-                           placeholder="someone@example.com"/>
-                </div>
-            </fieldset>
-            <div>
-                <input type="submit" value="Save"/>
-            </div>
-        </fieldset>
-    </form>
+        </form>
+    </article>
 </body>
 </html>
