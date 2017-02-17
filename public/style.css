@@ -296,3 +296,41 @@ td.actions button {
     width: 5em;
     margin: 0.2em;
 }
+
+p.recommend {
+    font-size: 1.4em;
+}
+
+ul.recommendations {
+    margin-bottom: 2em;
+}
+
+ul.recommendations li {
+    display: block;
+    border: 1px dashed #63B4C9;
+    background-color: #fffff9;
+    margin: 1em 2em;
+    padding: 2em;
+}
+
+#addrecommendation {
+    margin: 1em 2em;
+    text-align: center;
+}
+
+#addrecommendation fieldset {
+    padding: 0.8em;
+}
+
+#addrecommendation legend {
+    font-weight: bold;
+}
+
+#addrecommendation div {
+    padding: 0.4em;
+}
+
+#addrecommendation input {
+    width: 100%;
+    text-align: center;
+}

@@ -53,45 +53,49 @@
         </nav>
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
     </header>
-    <article>
+    <article >
         <header>
             <h2>Recommended Games</h2>
+            <p class="recommend">If you like</p>
+            <p><a href="screen9_game.html"><img src="#" alt="[photo]"/>Monopoly</a></p>
+            <p class="recommend">our users think you might also like:</p>
         </header>
-        <p>If you like</p>
-        <p><a href="screen9_game.html"><img src="#" alt="[photo]"/>Monopoly</a></p>
-        <p>our users think you might also like:</p>
-        <ul>
+        <ul class="recommendations">
             <li>
                 <a href="screen9_game.html"><img src="#" alt="[photo]"/></a>
                 <p><a href="screen9_game.html">Candyland</a></p>
                 <p><em>(12 users)</em></p>
-                <p>You recommended this. <a href="#">Undo</a></p>
+                <small>You recommended this. <a href="#">Undo</a></small>
             </li>
             <li>
                 <a href="screen9_game.html"><img src="#" alt="[photo]"/></a>
                 <p><a href="screen9_game.html">Risk</a></p>
                 <p><em>(8 users)</em></p>
-                <p><a href="#">Endorse Recommendation</a></p>
+                <small><a href="#">Endorse Recommendation</a></small>
             </li>
             <li>
                 <a href="screen9_game.html"><img src="#" alt="[photo]"/></a>
                 <p><a href="screen9_game.html">Clue</a></p>
                 <p><em>(4 users)</em></p>
-                <p><a href="#">Endorse Recommendation</a></p>
+                <small><a href="#">Endorse Recommendation</a></small>
             </li>
         </ul>
         <footer>
-            <form>
+            <form id="addrecommendation">
                 <fieldset>
                     <legend>Have your own recommendation?</legend>
-                    <label>
-                        Paste its <em>BoardGameDex</em> link here:
-                        <input type="url"
-                               size="34" 
+                    <div>
+                        <label for="url">Paste its <em>BoardGameDex</em> link here:</label>
+                    </div>
+                    <div>
+                        <input id="url"
+                               type="url"
                                placeholder="https://boardgamedex.firebaseapp.com/..."
                                required="required"/>
-                    </label>
-                    <input type="submit" value="Add Your Recommendation"/>
+                    </div>
+                    <div>
+                        <button type="submit" class="mini primary">Add Your Recommendation</button>
+                    </div
                 </fieldset>
             </form>
         </footer>
