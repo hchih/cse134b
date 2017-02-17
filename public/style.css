@@ -144,16 +144,17 @@ tbody tr:nth-child(even) {
 
 tr td:first-child {
     text-align: left;
+    vertical-align: middle;
 }
 
 tr td:first-child img {
-    float: left;
     margin-left: 1em;
     margin-right: 1em;
 }
 img{
     width: 150px;
     height: 150px;
+    vertical-align: middle;
 }
 fieldset {
     border-color: rgba(76, 54, 57, 0.31);
