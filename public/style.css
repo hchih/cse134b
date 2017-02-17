@@ -47,6 +47,7 @@ h1 a:hover {
 body > header nav {
     float: right;
     padding-bottom: 1em;
+    margin-left: 3em;
 }
 
 nav ul {
@@ -106,7 +107,6 @@ button.primary:active {
 
 article > header nav form {
     display: inline-block;
-    margin-bottom: 2em;
 }
 
 table {
@@ -147,9 +147,10 @@ tr td:first-child img {
 fieldset {
     border-color: rgba(76, 54, 57, 0.31);
     border-width: 0.08em;
+    margin-bottom: 2em;
 }
 
-label {
+fieldset.alignfields label {
     display: block;
     float: left;
     clear: left;
@@ -160,20 +161,23 @@ label {
 }
 
 input, select {
-    display: block;
-    float: left;
-    margin-left: 0.6em;
     padding: 0.2em;
     border: 0.08em rgba(76, 54, 57, 0.5) solid;
     border-radius: 0.3em;
     font-size: 1.1em;
 }
 
+fieldset.alignfields input, fieldset.alignfields select {
+    display: block;
+    float: left;
+    margin-left: 0.6em;
+}
+
 input:focus, select:focus {
     border-color: #4C3639;
 }
 
-fieldset button {
+fieldset.alignfields button {
     display: block;
     float: left;
     margin-top: 0.5em;
@@ -190,11 +194,6 @@ article > header nav {
 
 article > header nav ul {
     margin-bottom: 1em;
-}
-
-table {
-    margin: 0;
-    padding: 0;
 }
 
 body.loggedin > header nav ul {
@@ -230,7 +229,7 @@ button.accept:active {
     background-image: linear-gradient(to bottom, #06694a, #0fa715);
 }
 
-button.decline {
+button.decline, button.delete {
     text-shadow: 0px 1px black;
     background-color: #a7260f;
     background-image: linear-gradient(to bottom, #a7260f, #690a06);
@@ -238,12 +237,12 @@ button.decline {
     border-color: #4e0303;
 }
 
-button.decline:hover {
+button.decline:hover, button.delete:hover {
     background-color: #c66836;
     background-image: linear-gradient(to bottom, #c66836, #7b2b13);
 }
 
-button.decline:active {
+button.decline:active, button.delete:active {
     background-image: linear-gradient(to bottom, #690a06, #a7260f);
 }
 
@@ -255,4 +254,25 @@ p.accepted {
 p.declined {
     color: #a7260f;
     font-weight: bold;
+}
+
+button.delete {
+    font-size: 0.8em;
+    padding: 0.4em 0.7em;
+    margin-bottom: 0.8em;
+    border-radius: 0.4em;
+}
+
+fieldset.outer {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset.outer > legend {
+    display: block;
+    font-weight: bold;
+    font-size: 1.6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
