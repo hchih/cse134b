@@ -22,7 +22,7 @@
                         My Played Games
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="screen6_my_planned_games.html">
                         My Planned Games
                     </a>
@@ -51,66 +51,62 @@
                 </li>
             </ul>
         </nav>
+        <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
     </header>
     <form action="screen9_game.html">
-        <fieldset>
+        <fieldset class="outer alignfields">
             <legend>Add Game</legend>
             <div>
-                <label>Name <input type="text" required="required"/></label>
+                <label for="name">Name</label>
+                <input id="name" type="text" required="required"/>
             </div>
             <div>
-                <label>Photo <img src="#" alt="[photo]"/><input type="file"/></label>
+                <label for="photo">Photo</label>
+                <input id="photo" type="file"/>
             </div>
             <div>
-                <label>Official Site <input type="url"/></label>
+                <label for="site">Official Site</label>
+                <input id="site" type="url"/>
             </div>
             <div>
-                <label>Amazon Link <input type="url"/></label>
+                <label for="amazon">Amazon Link</label>
+                <input id="amazon" type="url"/>
             </div>
             <div>
-                <label>Player Count <input type="number"/></label>
-                <label>to <input type="number"/></label>
+                <label for="playercount">Player Count</label>
+                <input id="playercount" type="range"/>
             </div>
             <div>
-                <label>Avg Play Time <input type="number"/> hours</label>
+                <label for="playtime">Play Time</label>
+                <input id="playtime" type="range"/>
             </div>
             <div>
-                <label>
-                    Genre
-                    <select>
-                        <option selected="selected">--</option>
-                        <option>Family</option>
-                        <option>Thematic</option>
-                        <option>Card-based</option>
-                        <option>Combat</option>
-                        <option>Social deducation</option>
-                    </select>
-                </label>
+                <label for="genre">Genre</label>
+                <select id="genre">
+                    <option selected="selected">--</option>
+                    <option>Family</option>
+                    <option>Thematic</option>
+                    <option>Card-based</option>
+                    <option>Combat</option>
+                    <option>Social deducation</option>
+                </select>
             </div>
             <div>
-                <label>
-                    Difficulty Level
-                    <select>
-                        <option selected="selected">--</option>
-                        <option>Beginner</option>
-                        <option>Intermediate</option>
-                        <option>Advanced</option>
-                    </select>
-                </label>
+                <label for="difficulty">Difficulty Level</label>
+                <select id="difficulty">
+                    <option selected="selected">--</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
             </div>
             <div>
-                <label>
-                    Game Summary
-                    <br/>
-                    <textarea></textarea>
-                </label>
+                <label for="gamesummary">Game Summary</label>
+                <textarea id="gamesummary"></textarea>
             </div>
             <div>
-                <label>
-                    Rules Summary
-                    <br/>
-                    <textarea></textarea>
-                </label>
+                <label for="rulesummary">Rules Summary</label>
+                <textarea id="rulessummary"></textarea>
             </div>
             <div>
                 <button type="submit" class="primary">Save</button>

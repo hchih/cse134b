@@ -32,7 +32,7 @@
                         My Collection
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="screen8_my_wishlist.html">
                         My Wishlist
                     </a>
@@ -51,85 +51,77 @@
                 </li>
             </ul>
         </nav>
+        <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
     </header>
     <article>
         <header>
-            <img src="#" alt="[photo]"/>
-            <h2>Monopoly</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="http://www.hasbro.com/en-us/brands/monopoly">Official Site</a>
-                    </li>
-                    <li>
-                        <a href="https://www.amazon.com/Hasbro-00009-97-Monopoly/dp/B00000IWCT">Amazon.com</a>
-                    </li>
-                    <li>
-                        <a href="screen10_recommended_games_list.html">View Recommendations</a>
-                    </li>
-                    <li>
-                        <a href="screen13_create_edit_invitation.html">Create Invitation</a>
-                    </li>
-                </ul>
-            </nav>
-            <form>
-                <fieldset>
-                    <legend>Personal Info</legend>
-                    <div>
-                        <label>My Rating <input type="number"/>/10</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox"/> I plan to play this game.</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox" checked="checked"/> I've played this game.</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox"/> I own this game.</label>
-                    </div>
-                    <div>
-                        <label><input type="checkbox"/> I want this game.</label>
-                    </div>
-                    <div>
-                        <input type="submit" value="Update"/>
-                    </div>
-                </fieldset>
-            </form>
+            <h2>View Game</h2>
+            <article class="gamewidget">
+                <a href="screen9_game.html"><img src="monopoly.jpg" alt="[photo]"/></a>
+                <nav>
+                    <a href="screen9_game.html">Monopoly</a>
+                    <ul>
+                        <li>
+                            <a href="http://www.hasbro.com/en-us/brands/monopoly">Official Site</a>
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.com/Hasbro-00009-97-Monopoly/dp/B00000IWCT">Amazon.com</a>
+                        </li>
+                        <li>
+                            <a href="screen10_recommended_games_list.html">View Recommendations</a>
+                        </li>
+                        <li>
+                            <a href="screen13_create_edit_invitation.html">Create Invitation</a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
         </header>
-        <section>
-            <h3>Genre:</h3>
-            <p>Family</p>
-        </section>
-        <section>
-            <h3>Avg. Rating:</h3>
-            <p>2.5/10</p>
-        </section>
-        <section>
-            <h3>Invites Accepted:</h3>
-            <p>70%</p>
-        </section>
-        <section>
-            <h3>Player Count:</h3>
-            <p>2-8</p>
-        </section>
-        <section>
-            <h3>Est. Play Time:</h3>
-            <p>100 hours</p>
-        </section>
-        <section>
-            <h3>Difficulty Level:</h3>
-            <p>Beginner</p>
-        </section>
-        <section>
-            <h3>Game Summary:</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </section>
-        <section>
-            <h3>Rules Summary:</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
+        <form>
+            <fieldset class="personalinfo">
+                <legend>Personal Info</legend>
+                <div>
+                    <label>My Rating: <input type="number"/> /10</label>
+                </div>
+                <div>
+                    <label><input type="checkbox"/> I plan to play this game.</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" checked="checked"/> I've played this game.</label>
+                </div>
+                <div>
+                    <label><input type="checkbox"/> I own this game.</label>
+                </div>
+                <div>
+                    <label><input type="checkbox"/> I want this game.</label>
+                </div>
+                <div>
+                    <button type="submit" class="mini primary">Update</button>
+                </div>
+            </fieldset>
+        </form>
+        <dl>
+            <dt>Genre:</dt>
+            <dd>Family</dd>
+            <dt>Avg. Rating:</dt>
+            <dd>2.5/10</dd>
+            <dt>Invites Accepted:</dt>
+            <dd>70%</dd>
+            <dt>Player Count:</dt>
+            <dd>2-8</dd>
+            <dt>Est. Play Time:</dt>
+            <dd>100 hours</dd>
+            <dt>Difficulty Level:</dt>
+            <dd>Beginner</dd>
+            <dt>Game Summary:</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+            <dt>Rules Summary:</dt>
+            <dd>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+        </dl>
         <footer>
-            <p><a href="screen11_add_edit_game.html">Edit Info</a></p>
+            <a href="screen11_add_edit_game.html">
+                <button class="mini">Edit Info</button>
+            </a>
         </footer>
     </article>
 </body>
