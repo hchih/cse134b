@@ -59,8 +59,8 @@
             <h2>My Invitations</h2>
         </header>
         <section>
-            <h3>Invitations You Sent</h3>
             <table>
+                <caption>Invitations You Sent</caption>
                 <thead>
                     <tr>
                         <th>Game</th>
@@ -80,10 +80,18 @@
                         <td>Feb 2, 2017</td>
                         <td>2:00 PM PST</td>
                         <td>alice@example.com (&#10004;), bob@example.com (&#10008;)</td>
-                        <td>
+                        <td class="actions">
                             <ul>
-                                <li><a href="screen13_create_edit_invitation.html">Edit</a></li>
-                                <li><a href="#">Delete</a></li>
+                                <li>
+                                    <a href="screen13_create_edit_invitation.html">
+                                        <button class="mini">Edit</button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <button class="mini decline">Delete</button>
+                                    </a>
+                                </li>
                             </ul>
                         </td>
                     </tr>
@@ -91,8 +99,8 @@
             </table>
         </section>
         <section>
-            <h3>Invitations You Received</h3>
             <table>
+                <caption>Invitations You Received</caption>
                 <thead>
                     <tr>
                         <th>Game</th>
@@ -112,10 +120,18 @@
                         <td>Feb 2, 2017</td>
                         <td>2:00 PM PST</td>
                         <td>AverageUser2837</td>
-                        <td>
+                        <td class="actions">
                             <ul>
-                                <li><a href="#">Accept</a></li>
-                                <li><a href="#">Decline</a></li>
+                                <li>
+                                    <a href="#">
+                                        <button class="mini accept">Accept</button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <button class="mini decline">Decline</button>
+                                    </a>
+                                </li>
                             </ul>
                         </td>
                     </tr>

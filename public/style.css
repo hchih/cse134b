@@ -50,7 +50,7 @@ body > header nav {
     margin-left: 3em;
 }
 
-nav ul {
+ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -111,6 +111,14 @@ article > header nav form {
 
 table {
     width: 100%;
+    margin-bottom: 2em;
+}
+
+table caption {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.3em;
 }
 
 th, td {
@@ -275,4 +283,13 @@ fieldset.outer > legend {
     font-size: 1.6em;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+td.actions {
+    width: 9em;
+}
+
+td.actions button {
+    width: 5em;
+    margin: 0.2em;
 }
