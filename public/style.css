@@ -150,11 +150,12 @@ tr td:first-child {
 tr td:first-child img {
     margin-left: 1em;
     margin-right: 1em;
+}
+img{
     width: 150px;
     height: 150px;
     vertical-align: middle;
 }
-
 fieldset {
     border-color: rgba(76, 54, 57, 0.31);
     border-width: 0.08em;
