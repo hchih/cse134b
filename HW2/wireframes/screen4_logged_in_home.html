@@ -3,13 +3,17 @@
 <head>
     <meta charset="utf-8"/>
     <title>Browse All Games : BoardGameDex</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body>
+<body class="container">
     <header>
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
-        <nav>
-            <em>Welcome back, <strong>AverageUser9018</strong>!</em>
-            <ul>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <p class="navbar-brand" >
+                <em>Welcome back, <strong >AverageUser9018</strong>!</em></p>
+            </div>
+            <ul class="nav navbar-nav">
                 <li class="active">
                     <a href="screen4_logged_in_home.html">
                         Browse All Games
@@ -55,21 +59,22 @@
                 <fieldset>
                     <legend>Filter</legend>
                     <div>
-                        <label>Keyword <input type="text"/></label>
+                        <label>Keyword <input type="text" class="form-control"/></label>
                     </div>
                     <div>
-                        <label>Player Count <input type="number"/></label>
-                        <label>to <input type="number"/></label>
+                        <label>Player Count <input class="form-control" type="number"/></label>
+                        <label>to <input class="form-control" type="number"/></label>
                     </div>
                     <div>
-                        <label>Play Time <input type="number"/></label>
-                        <label>to <input type="number"/> hours</label>
+                        <label>Play Time <input class="form-control" type="number"/>
+                        </label>
+                        <label>to <input class="form-control" type="number"/> hours</label>
                     </div>
                     <div>
                         <label>
                             Genres
                             <br/>
-                            <select multiple="multiple" size="5">
+                            <select multiple="multiple" size="5" class="form-control">
                                 <option selected="selected">Family</option>
                                 <option selected="selected">Thematic</option>
                                 <option>Card-based</option>
@@ -81,14 +86,10 @@
                 </fieldset>
             </form>
             <nav>
-                <ul>
-                    <li>
-                        <a href="screen11_add_edit_game.html">+ Add Game</a>
-                    </li>
-                </ul>
+                <a href="screen11_add_edit_game.html"><button type="button" class="btn btn-info">+ Add Game</button></a>
             </nav>
         </header>
-        <table>
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Game</th>
