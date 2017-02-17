@@ -3,18 +3,21 @@
 <head>
     <meta charset="utf-8"/>
     <title>Create Invitation : BoardGameDex</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <body class="loggedin">
     <header>
-        <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
         <nav>
-            <em>Welcome back, <strong>AverageUser9018</strong>!</em>
+            <p><em>Welcome back, <strong>AverageUser9018</strong>!</em></p>
             <ul>
                 <li>
                     <a href="screen4_logged_in_home.html">
                         Browse All Games
                     </a>
                 </li>
+            </ul>
+            <ul>
                 <li>
                     <a href="screen5_my_played_games.html">
                         My Played Games
@@ -30,7 +33,7 @@
                         My Collection
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="screen8_my_wishlist.html">
                         My Wishlist
                     </a>
@@ -40,6 +43,8 @@
                         My Invitations
                     </a>
                 </li>
+            </ul>
+            <ul>
                 <li>
                     <a href="index.html">
                         Log Out
@@ -47,6 +52,7 @@
                 </li>
             </ul>
         </nav>
+        <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
     </header>
     <form action="screen12_my_invitations.html">
         <fieldset>
