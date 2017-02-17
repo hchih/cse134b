@@ -200,3 +200,59 @@ table {
 body.loggedin > header nav ul {
     margin-top: 1em;
 }
+
+#invitation {
+    text-align: center;
+    margin: 3em 5em;
+    border: 1px dashed #63B4C9;
+    background-color: #fffff9;
+}
+
+#invitation button {
+    margin-left: 0.15em;
+    margin-right: 0.15em;
+}
+
+button.accept {
+    text-shadow: 0px 1px black;
+    background-color: #0fa715;
+    background-image: linear-gradient(to bottom, #0fa715, #06694a);
+    color: white;
+    border-color: #034e37;
+}
+
+button.accept:hover {
+    background-color: #8acb31;
+    background-image: linear-gradient(to bottom, #8acb31, #0c9145);
+}
+
+button.accept:active {
+    background-image: linear-gradient(to bottom, #06694a, #0fa715);
+}
+
+button.decline {
+    text-shadow: 0px 1px black;
+    background-color: #a7260f;
+    background-image: linear-gradient(to bottom, #a7260f, #690a06);
+    color: white;
+    border-color: #4e0303;
+}
+
+button.decline:hover {
+    background-color: #c66836;
+    background-image: linear-gradient(to bottom, #c66836, #7b2b13);
+}
+
+button.decline:active {
+    background-image: linear-gradient(to bottom, #690a06, #a7260f);
+}
+
+p.accepted {
+    color: #258931;
+    font-weight: bold;
+}
+
+p.declined {
+    color: #a7260f;
+    font-weight: bold;
+}

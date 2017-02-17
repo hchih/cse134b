@@ -3,25 +3,37 @@
 <head>
     <meta charset="utf-8"/>
     <title>View Invitation : BoardGameDex</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+                <li><a href="screen2_log_in.html"><button class="primary">Log In</button></a></li>
+                <li><a href="screen3_register.html"><button>Register</button></a></li>
+            </ul>
+        </nav>
         <h1><a href="index.html">BoardGameDex</a></h1>
     </header>
     <article>
         <header>
             <h2>View Invitation</h2>
-            <p>Greetings <strong>alice@example.com</strong>!</p>
-            <p>You've been invited by <strong>AverageUser9018</strong> to play a game!</p>
-            <p><button>Accept</button> <button>Decline</button></p>
-            <p class="accepted">&#10004; You accepted the invitation.</p>
         </header>
-        <section>
+        <section id="invitation">
+            <p>Greetings <strong>alice@example.com</strong>!</p>
+            <p>You've been invited by <strong>AverageUser9018</strong> to play a game.</p>
+            <p>
+                <button class="accept">Accept</button>
+                <button class="decline">Decline</button>
+            </p>
+            <p class="accepted">&#10004; You accepted the invitation.</p>
+        </section>
+        <section id="inviteschedule">
             <h3>Scheduling</h3>
             <p>Date: 1/31/2017</p>
             <p>Time: 2:00 PM PST</p>
         </section>
-        <article>
+        <article id="invitegame">
             <header>
                 <h3>Game</h3>
                 <a href="screen9_game.html"><img src="#" alt="[photo]"/></a>
