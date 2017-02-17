@@ -4,13 +4,13 @@
 
 html {
     background-color: #F4F8F7;
-    min-height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
-    height: 100%;
+    min-height: 100%;
     background-color: white;
     margin-top: 0;
     margin-bottom: 0;
@@ -24,6 +24,10 @@ body {
 body {
     color: #4C3639;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body > article {
+    padding-bottom: 2em;
 }
 
 a {
@@ -56,7 +60,7 @@ ul {
     list-style-type: none;
 }
 
-body:not(.loggedin) nav ul li {
+body:not(.loggedin) > header nav ul li {
     display: inline-block;
     margin-left: 0.5em;
 }
@@ -105,7 +109,7 @@ button.primary:active {
     background-image: linear-gradient(to top, #F5A630, #D65B22);
 }
 
-article > header nav form {
+body > article > header nav form {
     display: inline-block;
 }
 
@@ -156,6 +160,7 @@ img{
     height: 150px;
     vertical-align: middle;
 }
+
 fieldset {
     border-color: rgba(76, 54, 57, 0.31);
     border-width: 0.08em;
@@ -172,39 +177,45 @@ fieldset.alignfields label {
     padding-top: 0.36em;
 }
 
-input, select {
+input, select, textarea {
     padding: 0.2em;
     border: 0.08em rgba(76, 54, 57, 0.5) solid;
     border-radius: 0.3em;
     font-size: 1.1em;
 }
 
-fieldset.alignfields input, fieldset.alignfields select {
+fieldset.alignfields input, fieldset.alignfields select,
+fieldset.alignfields textarea {
     display: block;
     float: left;
     margin-left: 0.6em;
 }
 
-input:focus, select:focus {
+input:focus, select:focus, textarea:focus {
     border-color: #4C3639;
 }
 
 fieldset.alignfields button {
     display: block;
     float: left;
+    clear: left;
     margin-top: 0.5em;
     margin-left: 6em;
+}
+
+fieldset.outer.alignfields button {
+    margin-left: 5em;
 }
 
 li.active {
     font-weight: bold;
 }
 
-article > header nav {
+body > article > header nav {
     width: 100%;
 }
 
-article > header nav ul {
+body > article > header nav ul {
     margin-bottom: 1em;
 }
 
@@ -334,4 +345,76 @@ ul.recommendations li {
 #addrecommendation input {
     width: 100%;
     text-align: center;
+}
+
+.gamewidget {
+    clear: both;
+    display: inline-flex;
+    align-items: center;
+}
+
+.gamewidget > nav > a {
+    font-size: 1.5em;
+}
+
+.gamewidget img {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.gamewidget ul {
+    margin-top: 1em;
+}
+
+.credentials {
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset.personalinfo {
+    float: right;
+    margin: 2em;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+fieldset.personalinfo div {
+    padding: 0.2em;
+}
+
+fieldset.personalinfo input[type="number"] {
+    width: 2em;
+    margin-left: 0.25em;
+}
+
+fieldset.personalinfo div:first-of-type {
+    padding-bottom: 0.6em;
+}
+
+fieldset.personalinfo div:last-of-type {
+    padding-top: 0.6em;
+}
+
+dl {
+    display: block;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+#inviteschedule {
+    float: right;
+    padding: 0.5em 2em;
+    border: 1px dashed #63B4C9;
+    background-color: #fffff9;
+}
+
+input[type="file"] {
+    margin-bottom: 0.4em;
 }

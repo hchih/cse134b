@@ -5,31 +5,30 @@
     <title>Log In : BoardGameDex</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<body class ="loggedin">
+<body>
     <header>
-        <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
         <nav>
             <ul>
-                <li><a href="screen2_log_in.html"><button class="primary">Log In</button></a></li>
                 <li><a href="screen3_register.html"><button>Register</button></a></li>
             </ul>
         </nav>
+        <h1><a href="index.html">BoardGameDex</a></h1>
     </header>
-    <form action="screen4_logged_in_home.html">
-	<nav>
-        <fieldset>
+    <form action="screen4_logged_in_home.html" class="credentials">
+        <fieldset class="outer alignfields">
             <legend>Log In</legend>
             <div>
-                <label for ="username">Username <input type="text" required="required"/></label>
+                <label for="username">Username</label>
+                <input id="username" type="text" required="required"/>
             </div>
             <div>
-                <label for ="password">Password <input type="password" required="required"/></label>
+                <label for="password">Password</label>
+                <input id="password" type="password" required="required"/>
             </div>
             <div>
-                <input type="Submit" value="Log In"/>
+                <button type="submit" class="primary">Log In</button>
             </div>
         </fieldset>
-	</nav>
     </form>
 </body>
 </html>
