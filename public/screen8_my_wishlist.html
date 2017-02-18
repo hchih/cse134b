@@ -53,44 +53,57 @@
         </nav>
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
     </header>
-    <article>
+    <article id="gameslist">
         <header>
             <h2>My Wishlist</h2>
             <nav>
-                <form>
-                    <fieldset class="alignfields">
-                        <legend>Filter</legend>
-                        <div>
-                            <label for="keyword">Keyword</label>
-                            <input type="text"/>
-                        </div>
-                        <div>
-                            <label for="playercount">Player Count</label>
-                            <input id="playercount" type="range"/>
-                        </div>
-                        <div>
-                            <label for="playtime">Play Time</label>
-                            <input id="playtime" type="range"/>
-                        </div>
-                        <div>
-                            <label for="genres">Genres</label>
-                            <select id="genres" multiple="multiple" size="5">
-                                <option>Family</option>
-                                <option>Thematic</option>
-                                <option>Card-based</option>
-                                <option>Combat</option>
-                                <option>Social deducation</option>
-                            </select>
-                        </div>
-                        <div>
-                            <button class="mini primary">Update</button>
-                        </div>
-                    </fieldset>
-                </form>
+                <details>
+                    <summary>Filter</summary>
+                    <form>
+                        <fieldset>
+                            <label>
+                                <small>Keyword</small>
+                                <input type="text"/>
+                            </label>
+                            <fieldset class="inline">
+                                <label>
+                                    <small>Player Count</small>
+                                    <input type="number"/>
+                                </label>
+                                <label>
+                                    to
+                                    <input type="number"/>
+                                </label>
+                            </fieldset>
+                            <fieldset class="inline">
+                                <label>
+                                    <small>Play Time</small>
+                                    <input type="number"/>
+                                </label>
+                                <label>
+                                    to
+                                    <input type="number"/>
+                                    hours
+                                </label>
+                            </fieldset>
+                            <label>
+                                <small>Genres</small>
+                                <select multiple="multiple" size="5">
+                                    <option>Family</option>
+                                    <option>Thematic</option>
+                                    <option>Card-based</option>
+                                    <option>Combat</option>
+                                    <option>Social deducation</option>
+                                </select>
+                            </label>
+                            <button class="mini">Update</button>
+                        </fieldset>
+                    </form>
+                </details>
                 <ul>
                     <li>
-                        <a href="screen11_add_edit_game.html">
-                            <button class="mini">+ Add Game</button>
+                        <a class="button mini primary" href="screen11_add_edit_game.html">
+                            + Add Game
                         </a>
                     </li>
                 </ul>

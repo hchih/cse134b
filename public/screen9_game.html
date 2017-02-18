@@ -56,7 +56,7 @@
     <article>
         <header>
             <h2>View Game</h2>
-            <article class="gamewidget">
+            <div class="gamewidget">
                 <a href="screen9_game.html"><img src="monopoly.jpg" alt="[photo]"/></a>
                 <nav>
                     <a href="screen9_game.html">Monopoly</a>
@@ -75,29 +75,22 @@
                         </li>
                     </ul>
                 </nav>
-            </article>
+            </div>
         </header>
         <form>
-            <fieldset class="personalinfo">
+            <fieldset id="personalinfo">
                 <legend>Personal Info</legend>
-                <div>
-                    <label>My Rating: <input type="number"/> /10</label>
-                </div>
-                <div>
+                <label>
+                    <small>My Rating</small>
+                    <input type="number"/> /10
+                </label>
+                <fieldset id="playstatus">
                     <label><input type="checkbox"/> I plan to play this game.</label>
-                </div>
-                <div>
                     <label><input type="checkbox" checked="checked"/> I've played this game.</label>
-                </div>
-                <div>
                     <label><input type="checkbox"/> I own this game.</label>
-                </div>
-                <div>
                     <label><input type="checkbox"/> I want this game.</label>
-                </div>
-                <div>
-                    <button type="submit" class="mini primary">Update</button>
-                </div>
+                </fieldset>
+                <button class="mini primary">Update</button>
             </fieldset>
         </form>
         <dl>
@@ -119,8 +112,8 @@
             <dd>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
         </dl>
         <footer>
-            <a href="screen11_add_edit_game.html">
-                <button class="mini">Edit Info</button>
+            <a class="button mini" href="screen11_add_edit_game.html">
+                Edit Info
             </a>
         </footer>
     </article>
