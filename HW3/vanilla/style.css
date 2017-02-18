@@ -1,0 +1,516 @@
+/* Top-Level Rules */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #F4F8F7;
+    
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: #4C3639;
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    max-width: 1000px;
+    min-height: 100%;
+    
+    margin: 0 auto;
+    padding: 1em 1.61803398875em; /* Golden ratio */
+    padding-bottom: 2em;
+}
+
+/* Element Styles */
+
+img {
+    width: 150px;
+    height: 150px;
+    
+    vertical-align: middle;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style-type: none;
+}
+
+dl {
+    display: block;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #63B4C9;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 > a {
+    color: #63B4C9;
+    text-decoration: none;
+}
+
+h1 > a:hover {
+    text-decoration: underline;
+}
+
+/* Body / Header Rules */
+
+body > header > nav {
+    float: right;
+    
+    margin-left: 3em;
+    padding-bottom: 1em;
+}
+
+body.loggedin > header > nav > ul {
+    margin-top: 1em;
+}
+
+body:not(.loggedin) > header > nav > ul > li {
+    display: inline-block;
+    
+    margin-left: 0.5em;
+}
+
+body > article > header > nav {
+    width: 100%;
+}
+
+body > article > header > nav > form {
+    display: inline-block;
+}
+
+body > article > header > nav > ul {
+    margin-bottom: 1em;
+}
+
+li.active {
+    font-weight: bold;
+}
+
+/* Fieldsets */
+
+fieldset {
+    border-color: rgba(76, 54, 57, 0.31);
+    border-width: 0.08em;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+fieldset > label {
+    display: block;
+    
+    line-height: 1.8em;
+    
+    margin-bottom: 1em;
+}
+
+fieldset > label:last-of-type {
+    margin-bottom: 0;
+}
+
+fieldset > label > small {
+    display: block;
+}
+
+fieldset > button {
+    margin-top: 1em;
+}
+
+fieldset.inline {
+    border-style: none;
+    
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+fieldset.inline > label {
+    display: inline;
+}
+
+fieldset.outer {
+    border-style: none;
+    
+    margin: 0;
+    padding: 0;
+}
+
+fieldset.outer > legend {
+    display: block;
+    
+    font-weight: bold;
+    font-size: 1.6em;
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+fieldset.outer > button {
+    margin-top: 1.4em;
+}
+
+/* Form Elements / Inputs */
+
+input, select, textarea {
+    border: 0.08em rgba(76, 54, 57, 0.5) solid;
+    border-radius: 0.3em;
+    
+    font-size: 1.1em;
+    
+    padding: 0.2em;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4C3639;
+}
+
+input[type="number"] {
+    width: 3em;
+}
+
+input[type="file"] {
+    margin-bottom: 0.4em;
+}
+
+textarea {
+    height: 6em;
+    width: 24em;
+}
+
+/* Buttons */
+
+button, .button {
+    display: inline-block;
+    
+    cursor: pointer;
+    
+    background-color: #F3F4E5;
+    background-image: linear-gradient(to bottom, #F3F4E5, #E2E3D9);
+    color: #4C3639;
+    text-decoration: none;
+    text-shadow: 0px 1px #b4a7a9;
+    
+    border: 0.08em #4C3639 solid;
+    border-radius: 0.8em;
+    
+    font-size: 1.4em;
+    
+    padding: 0.5em 1em;
+}
+
+button.mini, .button.mini {
+    border-radius: 0.4em;
+    
+    font-size: 1.1em;
+    
+    padding: 0.3em 0.8em;
+}
+
+button:hover, .button:hover {
+    background-color: #FEFFEE;
+    background-image: linear-gradient(to bottom, #FEFFEE, #E3E5D6);
+}
+
+button:active, .button:active {
+    background-image: linear-gradient(to top, #F3F4E5, #E2E3D9);
+}
+
+button.primary, .button.primary {
+    background-color: #F5A630;
+    background-image: linear-gradient(to bottom, #F5A630, #D65B22);
+    color: white;
+    text-shadow: 0px 1px black;
+    
+    border-color: #d42d2d;
+}
+
+button.primary:hover, .button.primary:hover {
+    background-color: #F8C373;
+    background-image: linear-gradient(to bottom, #F8C373, #F08655);
+}
+
+button.primary:active, .button.primary:active {
+    background-image: linear-gradient(to top, #F5A630, #D65B22);
+}
+
+button.accept, .button.accept {
+    background-color: #0fa715;
+    background-image: linear-gradient(to bottom, #0fa715, #06694a);
+    color: white;
+    text-shadow: 0px 1px black;
+    
+    border-color: #034e37;
+}
+
+button.accept:hover, .button.accept:hover {
+    background-color: #8acb31;
+    background-image: linear-gradient(to bottom, #8acb31, #0c9145);
+}
+
+button.accept:active, .button.accept:active {
+    background-image: linear-gradient(to bottom, #06694a, #0fa715);
+}
+
+button.decline, button.delete,
+.button.decline, .button.delete {
+    background-color: #a7260f;
+    background-image: linear-gradient(to bottom, #a7260f, #690a06);
+    color: white;
+    text-shadow: 0px 1px black;
+    
+    border-color: #4e0303;
+}
+
+button.decline:hover, button.delete:hover,
+.button.decline:hover, .button.delete:hover {
+    background-color: #c66836;
+    background-image: linear-gradient(to bottom, #c66836, #7b2b13);
+}
+
+button.decline:active, button.delete:active,
+.button.decline:active, .button.delete:active {
+    background-image: linear-gradient(to bottom, #690a06, #a7260f);
+}
+
+button.delete, .button.delete {
+    border-radius: 0.4em;
+    
+    font-size: 0.8em;
+    
+    margin-bottom: 0.8em;
+    padding: 0.4em 0.7em;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    
+    margin-bottom: 2em;
+}
+
+caption {
+    text-align: left;
+    
+    font-weight: bold;
+    font-size: 1.2em;
+    
+    padding-bottom: 0.3em;
+}
+
+th, td {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+th {
+    background-color: #eaf5fa;
+}
+
+td {
+    text-align: center;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #F3F9FC;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: #F9FDFF;
+}
+
+tr > td:first-child {
+    text-align: left;
+    
+    vertical-align: middle;
+}
+
+tr > td:first-child img {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+td.actions {
+    width: 9em;
+}
+
+td.actions button, td.actions .button {
+    width: 5em;
+    
+    margin: 0.2em;
+}
+
+/* Game Widget */
+
+.gamewidget {
+    display: inline-flex;
+    align-items: center;
+    
+    clear: both;
+}
+
+.gamewidget > nav > a {
+    font-size: 1.5em;
+}
+
+.gamewidget img {
+    display: inline-block;
+    
+    margin-right: 1em;
+}
+
+.gamewidget ul {
+    margin-top: 1em;
+}
+
+/* Invitation */
+
+#invitation {
+    background-color: #fffff9;
+    text-align: center;
+    
+    border: 1px dashed #63B4C9;
+    
+    margin: 3em 5em;
+}
+
+#invitation button {
+    margin-left: 0.15em;
+    margin-right: 0.15em;
+}
+
+#inviteschedule {
+    background-color: #fffff9;
+    
+    border: 1px dashed #63B4C9;
+    
+    float: right;
+    
+    padding: 0.5em 2em;
+}
+
+p.accepted {
+    color: #258931;
+    font-weight: bold;
+}
+
+p.declined {
+    color: #a7260f;
+    font-weight: bold;
+}
+
+#invitationform fieldset {
+    margin-bottom: 2em;
+}
+
+/* Recommended Games */
+
+#recommendedgames > header > p {
+    font-size: 1.4em;
+}
+
+#recommendedgames > ul {
+    margin-bottom: 2em;
+}
+
+#recommendedgames > ul > li {
+    display: block;
+    
+    background-color: #fffff9;
+    
+    border: 1px dashed #63B4C9;
+    
+    margin: 1em 2em;
+    padding: 2em;
+}
+
+#recommendedgames > footer {
+    text-align: center;
+    
+    margin: 1em 2em;
+}
+
+#recommendedgames > footer input {
+    text-align: center;
+    
+    width: 100%;
+    
+    margin-top: 0.4em;
+}
+
+/* Login / Register */
+
+#credentials {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 6em;
+}
+
+/* Game Page */
+
+#personalinfo {
+    float: right;
+    
+    margin: 2em;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+#personalinfo label {
+    margin-bottom: 0;
+}
+
+#playstatus {
+    border-style: none;
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+}
+
+/* Game List Pages */
+
+#gameslist nav {
+    float: left;
+    clear: right;
+    
+    margin-top: 2em;
+}
+
+#gameslist ul {
+    float: right;
+}
+
+#gameslist details {
+    float: left;
+    
+    margin-bottom: 2em;
+}
+
+#gameslist summary {
+    margin-bottom: 1em;
+}
