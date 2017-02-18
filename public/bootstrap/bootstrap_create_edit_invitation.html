@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Create Invitation : BoardGameDex</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body class="container">
+        <header>
+        <h1><a href="bootstrap_logged_in_home.html">BoardGameDex</a></h1>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <p class="navbar-brand" >
+                <em>Welcome back, <strong >AverageUser9018</strong>!</em></p>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="bootstrap_logged_in_home.html">
+                        Browse All Games
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_my_played_games.html">
+                        My Played Games
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_my_planned_games.html">
+                        My Planned Games
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_my_collection.html">
+                        My Collection
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_my_wishlist.html">
+                        My Wishlist
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="bootstrap_my_invitations.html">
+                        My Invitations
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_index.html">
+                        Log Out
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form action="bootstrap_my_invitations.html">
+        <fieldset>
+            <legend>Create Invitation</legend>
+            <fieldset>
+                <legend>Game</legend>
+                <div>
+                    <a href="bootstrap_game.html"><img class="img-rounded" src="../candyland.jpg" width="150" height="150" alt="[photo]"/>Candyland</a>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Scheduling</legend>
+                <div>
+                    <label>Date <input class="form-control" type="text"/></label>
+                </div>
+                <div>
+                    <label>Time <input class="form-control" type="text"/></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Invited People</legend>
+                <div>
+                    <input class="form-control" type="email"
+                           placeholder="someone@example.com"
+                           value="alice@example.com"/>
+                    <button>&#10008;</button>
+                </div>
+                <div>
+                    <input class="form-control" type="email"
+                           placeholder="someone@example.com"
+                           value="bob@example.com"/>
+                    <button>&#10008;</button>
+                </div>
+                <div>
+                    <input class="form-control" type="email"
+                           placeholder="someone@example.com"/>
+                </div>
+            </fieldset>
+            <div>
+                <button class="btn btn-info" >Save</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
