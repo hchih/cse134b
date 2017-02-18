@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Browse All Games : BoardGameDex</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body class="container">
+    <header>
+        <h1><a href="bootstrap_index.html">BoardGameDex</a></h1>
+        <nav>
+            
+            <div class="pull-right">
+                <a href="../vanilla/index.html" class="btn btn-primary">Vanilla</a>
+                
+                <a href="bootstrap_log_in.html" class="btn btn-primary">Log In</a>
+
+                <a href="bootstrap_register.html" class="btn btn-primary">Register</a>
+            </div>
+            
+        </nav>
+    </header>
+    <article>
+        <header>
+            <h2>Browse All Games</h2>
+            <nav>
+                <form>
+                    <fieldset>
+                        <legend>Filter</legend>
+                        <div class="form-group">
+                            <label>Keyword 
+                                <input class="form-control" type="text"/>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="playercount">Player Count</label>
+                            <div class="form-inline">
+                                <input id="playercount"
+                                       class="form-control"
+                                       type="number"/>
+                                <label>to <input class="form-control" type="number"/></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="playtime">Play Time</label>
+                            <div class="form-inline">
+                                <input id="playtime"
+                                       class="form-control"
+                                       type="number"/>
+                                <label>to <input class="form-control" type="number"/> hours</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Genres
+                                <br/>
+                                <select class="form-control" multiple="multiple" size="5">
+                                    <option selected="selected">Family</option>
+                                    <option selected="selected">Thematic</option>
+                                    <option>Card-based</option>
+                                    <option>Combat</option>
+                                    <option>Social deducation</option>
+                                </select>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-info">Update</button>
+                    </fieldset>
+                </form>
+            </nav>
+        </header>
+        <h3>Games List</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Game</th>
+                    <th>Genre</th>
+                    <th>Avg Rating</th>
+                    <th>Player Count</th>
+                    <th>Est Play Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="bootstrap_game.html">
+                            <img class="img-rounded" src="monopoly.jpg" width="150" height="150" alt="[photo]"/>Monopoly
+                        </a>
+                    </td>
+                    <td>Family</td>
+                    <td>2.5/10</td>
+                    <td>2-8</td>
+                    <td>100 hours</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+</body>
+</html>

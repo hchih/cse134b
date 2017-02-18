@@ -3,23 +3,19 @@
 <head>
     <meta charset="utf-8"/>
     <title>Add Game : BoardGameDex</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body class="container">
+<body>
     <header>
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <p class="navbar-brand" >
-                <em>Welcome back, <strong >AverageUser9018</strong>!</em></p>
-            </div>
-            <ul class="nav navbar-nav">
+        <nav>
+            <em>Welcome back, <strong>AverageUser9018</strong>!</em>
+            <ul>
                 <li>
                     <a href="screen4_logged_in_home.html">
                         Browse All Games
                     </a>
                 </li>
-                <li >
+                <li>
                     <a href="screen5_my_played_games.html">
                         My Played Games
                     </a>
@@ -34,7 +30,7 @@
                         My Collection
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="screen8_my_wishlist.html">
                         My Wishlist
                     </a>
@@ -56,28 +52,28 @@
         <fieldset>
             <legend>Add Game</legend>
             <div>
-                <label>Name <input class="form-control" type="text" required="required"/></label>
+                <label>Name <input type="text" required="required"/></label>
             </div>
             <div>
-                <label>Photo <img src="#" alt="[photo]"/><input class="form-control" type="file"/></label>
+                <label>Photo <img src="#" alt="[photo]"/><input type="file"/></label>
             </div>
             <div>
-                <label>Official Site <input class="form-control" type="url"/></label>
+                <label>Official Site <input type="url"/></label>
             </div>
             <div>
-                <label>Amazon Link <input class="form-control" type="url"/></label>
+                <label>Amazon Link <input type="url"/></label>
             </div>
             <div>
-                <label>Player Count <input class="form-control" type="number"/></label>
-                <label>to <input class="form-control" type="number"/></label>
+                <label>Player Count <input type="number"/></label>
+                <label>to <input type="number"/></label>
             </div>
             <div>
-                <label>Avg Play Time <input class="form-control" type="number"/> hours</label>
+                <label>Avg Play Time <input type="number"/> hours</label>
             </div>
             <div>
                 <label>
                     Genre
-                    <select class="form-control">
+                    <select>
                         <option selected="selected">--</option>
                         <option>Family</option>
                         <option>Thematic</option>
@@ -90,7 +86,7 @@
             <div>
                 <label>
                     Difficulty Level
-                    <select class="form-control">
+                    <select>
                         <option selected="selected">--</option>
                         <option>Beginner</option>
                         <option>Intermediate</option>
@@ -102,18 +98,18 @@
                 <label>
                     Game Summary
                     <br/>
-                    <textarea class="form-control"></textarea>
+                    <textarea></textarea>
                 </label>
             </div>
             <div>
                 <label>
                     Rules Summary
                     <br/>
-                    <textarea class="form-control"></textarea>
+                    <textarea></textarea>
                 </label>
             </div>
             <div>
-                 <button class="btn btn-info" >Save</button>
+                <input type="Submit" value="Save"/>
             </div>
         </fieldset>
     </form>

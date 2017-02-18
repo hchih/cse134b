@@ -3,23 +3,19 @@
 <head>
     <meta charset="utf-8"/>
     <title>My Wishlist : BoardGameDex</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body class="container">
+<body>
     <header>
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <p class="navbar-brand" >
-                <em>Welcome back, <strong >AverageUser9018</strong>!</em></p>
-            </div>
-            <ul class="nav navbar-nav">
+        <nav>
+            <em>Welcome back, <strong>AverageUser9018</strong>!</em>
+            <ul>
                 <li>
                     <a href="screen4_logged_in_home.html">
                         Browse All Games
                     </a>
                 </li>
-                <li >
+                <li>
                     <a href="screen5_my_played_games.html">
                         My Played Games
                     </a>
@@ -59,24 +55,23 @@
                 <fieldset>
                     <legend>Filter</legend>
                     <div>
-                        <label>Keyword <input type="text" class="form-control"/></label>
+                        <label>Keyword <input type="text"/></label>
                     </div>
                     <div>
-                        <label>Player Count <input class="form-control" type="number"/></label>
-                        <label>to <input class="form-control" type="number"/></label>
+                        <label>Player Count <input type="number"/></label>
+                        <label>to <input type="number"/></label>
                     </div>
                     <div>
-                        <label>Play Time <input class="form-control" type="number"/>
-                        </label>
-                        <label>to <input class="form-control" type="number"/> hours</label>
+                        <label>Play Time <input type="number"/></label>
+                        <label>to <input type="number"/> hours</label>
                     </div>
                     <div>
                         <label>
                             Genres
                             <br/>
-                            <select multiple="multiple" size="5" class="form-control">
-                                <option selected="selected">Family</option>
-                                <option selected="selected">Thematic</option>
+                            <select multiple="multiple" size="5">
+                                <option>Family</option>
+                                <option>Thematic</option>
                                 <option>Card-based</option>
                                 <option>Combat</option>
                                 <option>Social deducation</option>
@@ -86,10 +81,14 @@
                 </fieldset>
             </form>
             <nav>
-                <a href="screen11_add_edit_game.html"><button type="button" class="btn btn-info">+ Add Game</button></a>
+                <ul>
+                    <li>
+                        <a href="screen11_add_edit_game.html">+ Add Game</a>
+                    </li>
+                </ul>
             </nav>
         </header>
-        <table class="table table-striped">
+        <table>
             <thead>
                 <tr>
                     <th>Game</th>
@@ -104,14 +103,14 @@
                 <tr>
                     <td>
                         <a href="screen9_game.html">
-                            <img src="#" alt="[photo]"/>Monopoly
+                            <img src="#" alt="[photo]"/>Risk
                         </a>
                     </td>
                     <td>Family</td>
-                    <td>10/10</td>
-                    <td>2.5/10</td>
-                    <td>2-8</td>
-                    <td>100 hours</td>
+                    <td>--</td>
+                    <td>4.2/10</td>
+                    <td>3-6</td>
+                    <td>3 hours</td>
                 </tr>
             </tbody>
         </table>

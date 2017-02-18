@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>My Planned Games : BoardGameDex</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body class="container">
+        <header>
+        <h1><a href="bootstrap_logged_in_home.html">BoardGameDex</a></h1>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <p class="navbar-brand" >
+                <em>Welcome back, <strong >AverageUser9018</strong>!</em></p>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="bootstrap_logged_in_home.html">
+                        Browse All Games
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_my_played_games.html">
+                        My Played Games
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="bootstrap_my_planned_games.html">
+                        My Planned Games
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_my_collection.html">
+                        My Collection
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_my_wishlist.html">
+                        My Wishlist
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_my_invitations.html">
+                        My Invitations
+                    </a>
+                </li>
+                <li>
+                    <a href="bootstrap_index.html">
+                        Log Out
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <header>
+            <h2>My Planned Games</h2>
+            <form>
+                <fieldset>
+                    <legend>Filter</legend>
+                    <div class="form-group">
+                        <label>Keyword 
+                            <input class="form-control" type="text"/>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="playercount">Player Count</label>
+                        <div class="form-inline">
+                            <input id="playercount"
+                                   class="form-control"
+                                   type="number"/>
+                            <label>to <input class="form-control" type="number"/></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="playtime">Play Time</label>
+                        <div class="form-inline">
+                            <input id="playtime"
+                                   class="form-control"
+                                   type="number"/>
+                            <label>to <input class="form-control" type="number"/> hours</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Genres
+                            <br/>
+                            <select class="form-control" multiple="multiple" size="5">
+                                <option selected="selected">Family</option>
+                                <option selected="selected">Thematic</option>
+                                <option>Card-based</option>
+                                <option>Combat</option>
+                                <option>Social deducation</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-info">Update</button>
+                </fieldset>
+            </form>
+        </header>
+        <h3>Games List</h3>
+       
+            <a href="bootstrap_add_edit_game.html" class="btn btn-info">+ Add Game</a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Game</th>
+                    <th>Genre</th>
+                    <th>Your Rating</th>
+                    <th>Avg Rating</th>
+                    <th>Player Count</th>
+                    <th>Est Play Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="bootstrap_game.html">
+                            <img class="img-rounded" src="monopoly.jpg" width="150" height="150" alt="[photo]"/>Monopoly
+                        </a>
+                    </td>
+                    <td>Family</td>
+                    <td>10/10</td>
+                    <td>2.5/10</td>
+                    <td>2-8</td>
+                    <td>100 hours</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+</body>
+</html>

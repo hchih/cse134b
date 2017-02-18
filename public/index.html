@@ -1,118 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title>Browse All Games : BoardGameDex</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta charset="utf-8"/>
+        <title>CSE 134B: BoardGameDex</title>
+        <style type="text/css">
+                body {
+                        font-family: sans-serif;
+                }
+                header, section, footer {
+                        padding: 1em;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: black;
+                }
+        </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a class="button primary" href="screen2_log_in.html">Log In</a></li>
-                <li><a class="button" href="screen3_register.html">Register</a></li>
-            </ul>
-        </nav>
-        <h1><a href="index.html">BoardGameDex</a></h1>
-    </header>
-    <article id="gameslist">
-        <header>
-            <h2>Browse All Games</h2>
-            <nav>
-                <details>
-                    <summary>Filter</summary>
-                    <form>
-                        <fieldset>
-                            <label>
-                                <small>Keyword</small>
-                                <input type="text"/>
-                            </label>
-                            <fieldset class="inline">
-                                <label>
-                                    <small>Player Count</small>
-                                    <input type="number"/>
-                                </label>
-                                <label>
-                                    to
-                                    <input type="number"/>
-                                </label>
-                            </fieldset>
-                            <fieldset class="inline">
-                                <label>
-                                    <small>Play Time</small>
-                                    <input type="number"/>
-                                </label>
-                                <label>
-                                    to
-                                    <input type="number"/>
-                                    hours
-                                </label>
-                            </fieldset>
-                            <label>
-                                <small>Genres</small>
-                                <select multiple="multiple" size="5">
-                                    <option>Family</option>
-                                    <option>Thematic</option>
-                                    <option>Card-based</option>
-                                    <option>Combat</option>
-                                    <option>Social deducation</option>
-                                </select>
-                            </label>
-                            <button class="mini">Update</button>
-                        </fieldset>
-                    </form>
-                </details>
-            </nav>
-        </header>
-        <table>
-            <thead>
-                <tr>
-                    <th>Game</th>
-                    <th>Genre</th>
-                    <th>Avg Rating</th>
-                    <th>Player Count</th>
-                    <th>Est Play Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <a href="screen9_game.html">
-                            <img src="monopoly.jpg" alt="[photo]"/>Monopoly
-                        </a>
-                    </td>
-                    <td>Family</td>
-                    <td>2.5/10</td>
-                    <td>2-8</td>
-                    <td>100 hours</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="screen9_game.html">
-                            <img src="candyland.jpg" alt="[photo]"/>Candyland
-                        </a>
-                    </td>
-                    <td>Combat</td>
-                    <td>3.6/10</td>
-                    <td>2-5</td>
-                    <td>2 hours</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="screen9_game.html">
-                            <img src="risk.jpg" alt="[photo]"/>Risk
-                        </a>
-                    </td>
-                    <td>Family</td>
-                    <td>4.2/10</td>
-                    <td>3-6</td>
-                    <td>3 hours</td>
-                </tr>
-            </tbody>
-        </table>
-    </article>
-    <footer>
-        Check out the <a href="bootstrap/bootstrap_index.html">Bootstrap version</a> of our site, as well as our <a href="team.html">team page</a>!
-    </footer>
+        <article>
+                <header>
+                        <h1>BoardGameDex</h1>
+                </header>
+                <section>
+                        <h2>Homework #2</h2>
+                        <ul>
+                                <li><a href="HW2/wireframes/index.html">Wireframes</a></li>
+                                <li><a href="HW2/tags/index.html">Tag test pages</a></li>
+                        </ul>
+                </section>
+                <section>
+                        <h2>Homework #3</h2>
+                        <ul>
+                                <li><a href="HW3/vanilla/index.html">Vanilla CSS</a></li>
+                                <li><a href="HW3/bootstrap/bootstrap_index.html">Bootstrap</a></li>
+                        </ul>
+                </section>
+                <footer>
+                        <a href="team.html">Team page</a>
+                </footer>
+        </article>
 </body>
 </html>
+

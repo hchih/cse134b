@@ -3,29 +3,28 @@
 <head>
     <meta charset="utf-8"/>
     <title>Register : BoardGameDex</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body class="container">
+<body>
     <header>
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
         <nav>
-            <div class="pull-right">
-                <a href="screen2_log_in.html"><button type="button" class="btn btn-primary">Log In</button></a>
-                <a href="screen3_register.html"><button type="button" class="btn btn-primary">Register</button></a>
-            </div>
+            <ul>
+                <li><a href="screen2_log_in.html">Log In</a></li>
+                <li><a href="screen3_register.html">Register</a></li>
+            </ul>
         </nav>
     </header>
     <form action="screen4_logged_in_home.html">
         <fieldset>
             <legend>Register</legend>
             <div>
-                <label>Username <input type="text" required="required" class="form-control"/></label>
+                <label>Username <input type="text" required="required"/></label>
             </div>
             <div>
-                <label>Password <input type="password" required="required" class="form-control"/></label>
+                <label>Password <input type="password" required="required"/></label>
             </div>
             <div>
-                <label>Confirm Password <input type="password" required="required" class="form-control"/></label>
+                <label>Confirm Password <input type="password" required="required"/></label>
             </div>
             <div>
                 <input type="Submit" value="Register"/>
