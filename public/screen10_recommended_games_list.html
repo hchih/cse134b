@@ -53,49 +53,118 @@
         </nav>
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
     </header>
-    <article >
+    <article id="recommendedgames">
         <header>
             <h2>Recommended Games</h2>
-            <p class="recommend">If you like</p>
-            <p><a href="screen9_game.html"><img src="monopoly.jpg" alt="[photo]"/>Monopoly</a></p>
-            <p class="recommend">our users think you might also like:</p>
+            <p>If you like</p>
+            <div class="gamewidget">
+                <a href="screen9_game.html"><img src="monopoly.jpg" alt="[photo]"/></a>
+                <nav>
+                    <a href="screen9_game.html">Monopoly</a>
+                    <ul>
+                        <li>
+                            <a href="http://www.hasbro.com/en-us/brands/monopoly">Official Site</a>
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.com/Hasbro-00009-97-Monopoly/dp/B00000IWCT">Amazon.com</a>
+                        </li>
+                        <li>
+                            <a href="screen10_recommended_games_list.html">View Recommendations</a>
+                        </li>
+                        <li>
+                            <a href="screen13_create_edit_invitation.html">Create Invitation</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p>our users think you might also like:</p>
         </header>
         <ul class="recommendations">
             <li>
-                <a href="screen9_game.html"><img src="candyland.jpg" alt="[photo]"/></a>
-                <p><a href="screen9_game.html">Candyland</a></p>
+                <div class="gamewidget">
+                    <a href="screen9_game.html"><img src="candyland.jpg" alt="[photo]"/></a>
+                    <nav>
+                        <a href="screen9_game.html">Candyland</a>
+                        <ul>
+                            <li>
+                                <a href="http://www.hasbro.com/en-us/product/candy-land-game:C4E461C2-5056-9047-F5F7-F005920A3999">Official Site</a>
+                            </li>
+                            <li>
+                                <a href="https://www.amazon.com/Candy-World-Sweets-Amazon-Exclusive/dp/B00000DMF5">Amazon.com</a>
+                            </li>
+                            <li>
+                                <a href="screen10_recommended_games_list.html">View Recommendations</a>
+                            </li>
+                            <li>
+                                <a href="screen13_create_edit_invitation.html">Create Invitation</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <p><em>(12 users)</em></p>
                 <small>You recommended this. <a href="#">Undo</a></small>
             </li>
             <li>
-                <a href="screen9_game.html"><img src="risk.jpg" alt="[photo]"/></a>
-                <p><a href="screen9_game.html">Risk</a></p>
+                <div class="gamewidget">
+                    <a href="screen9_game.html"><img src="risk.jpg" alt="[photo]"/></a>
+                    <nav>
+                        <a href="screen9_game.html">Risk</a>
+                        <ul>
+                            <li>
+                                <a href="http://www.hasbro.com/en-us/product/risk-game:2C7C6F52-5056-9047-F5DD-EB8AC273BA4C">Official Site</a>
+                            </li>
+                            <li>
+                                <a href="https://www.amazon.com/Hasbro-28720-Risk-Game-Domination/dp/B004MRZGC4">Amazon.com</a>
+                            </li>
+                            <li>
+                                <a href="screen10_recommended_games_list.html">View Recommendations</a>
+                            </li>
+                            <li>
+                                <a href="screen13_create_edit_invitation.html">Create Invitation</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <p><em>(8 users)</em></p>
                 <small><a href="#">Endorse Recommendation</a></small>
             </li>
             <li>
-                <a href="screen9_game.html"><img src="clue.jpg" alt="[photo]"/></a>
-                <p><a href="screen9_game.html">Clue</a></p>
+                <div class="gamewidget">
+                    <a href="screen9_game.html"><img src="clue.jpg" alt="[photo]"/></a>
+                    <nav>
+                        <a href="screen9_game.html">Clue</a>
+                        <ul>
+                            <li>
+                                <a href="http://www.hasbro.com/en-us/toys-games/hasbro-games:clue">Official Site</a>
+                            </li>
+                            <li>
+                                <a href="https://www.amazon.com/Hasbro-A5826-Clue-Game/dp/B00DUB6RVW">Amazon.com</a>
+                            </li>
+                            <li>
+                                <a href="screen10_recommended_games_list.html">View Recommendations</a>
+                            </li>
+                            <li>
+                                <a href="screen13_create_edit_invitation.html">Create Invitation</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <p><em>(4 users)</em></p>
                 <small><a href="#">Endorse Recommendation</a></small>
             </li>
         </ul>
         <footer>
-            <form id="addrecommendation">
+            <form>
                 <fieldset>
                     <legend>Have your own recommendation?</legend>
-                    <div>
-                        <label for="url">Paste its <em>BoardGameDex</em> link here:</label>
-                    </div>
-                    <div>
+                    <label>
+                        <small>Paste its <em>BoardGameDex</em> link here:</small>
                         <input id="url"
                                type="url"
                                placeholder="https://boardgamedex.firebaseapp.com/..."
                                required="required"/>
-                    </div>
-                    <div>
-                        <button type="submit" class="mini primary">Add Your Recommendation</button>
-                    </div
+                    </label>
+                    <button class="mini primary">Add Your Recommendation</button>
                 </fieldset>
             </form>
         </footer>

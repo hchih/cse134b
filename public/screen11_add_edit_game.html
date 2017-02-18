@@ -54,35 +54,48 @@
         <h1><a href="screen4_logged_in_home.html">BoardGameDex</a></h1>
     </header>
     <form action="screen9_game.html">
-        <fieldset class="outer alignfields">
+        <fieldset class="outer">
             <legend>Add Game</legend>
-            <div>
-                <label for="name">Name</label>
-                <input id="name" type="text" required="required"/>
-            </div>
-            <div>
-                <label for="photo">Photo</label>
-                <input id="photo" type="file"/>
-            </div>
-            <div>
-                <label for="site">Official Site</label>
-                <input id="site" type="url"/>
-            </div>
-            <div>
-                <label for="amazon">Amazon Link</label>
-                <input id="amazon" type="url"/>
-            </div>
-            <div>
-                <label for="playercount">Player Count</label>
-                <input id="playercount" type="range"/>
-            </div>
-            <div>
-                <label for="playtime">Play Time</label>
-                <input id="playtime" type="range"/>
-            </div>
-            <div>
-                <label for="genre">Genre</label>
-                <select id="genre">
+            <label>
+                <small>Name</small>
+                <input type="text" required="required"/>
+            </label>
+            <label>
+                <small>Photo</small>
+                <input type="file"/>
+            </label>
+            <label>
+                <small>Official Site</small>
+                <input type="url"/>
+            </label>
+            <label>
+                <small>Amazon Link</small>
+                <input type="url"/>
+            </label>
+            <fieldset class="inline">
+                <label>
+                    <small>Player Count</small>
+                    <input type="number"/>
+                </label>
+                <label>
+                    to
+                    <input type="number"/>
+                </label>
+            </fieldset>
+            <fieldset class="inline">
+                <label>
+                    <small>Play Time</small>
+                    <input type="number"/>
+                </label>
+                <label>
+                    to
+                    <input type="number"/>
+                    hours
+                </label>
+            </fieldset>
+            <label>
+                <small>Genre</small>
+                <select>
                     <option selected="selected">--</option>
                     <option>Family</option>
                     <option>Thematic</option>
@@ -90,27 +103,25 @@
                     <option>Combat</option>
                     <option>Social deducation</option>
                 </select>
-            </div>
-            <div>
-                <label for="difficulty">Difficulty Level</label>
-                <select id="difficulty">
+            </label>
+            <label>
+                <small>Difficulty Level</small>
+                <select>
                     <option selected="selected">--</option>
                     <option>Beginner</option>
                     <option>Intermediate</option>
                     <option>Advanced</option>
                 </select>
-            </div>
-            <div>
-                <label for="gamesummary">Game Summary</label>
-                <textarea id="gamesummary"></textarea>
-            </div>
-            <div>
-                <label for="rulesummary">Rules Summary</label>
-                <textarea id="rulessummary"></textarea>
-            </div>
-            <div>
-                <button type="submit" class="primary">Save</button>
-            </div>
+            </label>
+            <label>
+                <small>Game Summary</small>
+                <textarea></textarea>
+            </label>
+            <label>
+                <small>Rules Summary</small>
+                <textarea></textarea>
+            </label>
+            <button class="mini primary">Save</button>
         </fieldset>
     </form>
 </body>

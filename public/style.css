@@ -1,33 +1,58 @@
+/* Top-Level Rules */
+
 * {
     box-sizing: border-box;
 }
 
 html {
     background-color: #F4F8F7;
+    
     height: 100%;
+    
     margin: 0;
     padding: 0;
 }
 
 body {
-    min-height: 100%;
     background-color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em 1.61803398875em;
-    padding-bottom: 0;
-    max-width: 1000px;
-}
-
-body {
     color: #4C3639;
+    
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    max-width: 1000px;
+    min-height: 100%;
+    
+    margin: 0 auto;
+    padding: 1em 1.61803398875em; /* Golden ratio */
+    padding-bottom: 2em;
 }
 
-body > article {
-    padding-bottom: 2em;
+/* Element Styles */
+
+img {
+    width: 150px;
+    height: 150px;
+    
+    vertical-align: middle;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style-type: none;
+}
+
+dl {
+    display: block;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 1em;
 }
 
 a {
@@ -39,89 +64,260 @@ h1 {
     padding: 0;
 }
 
-h1 a {
+h1 > a {
     color: #63B4C9;
     text-decoration: none;
 }
 
-h1 a:hover {
+h1 > a:hover {
     text-decoration: underline;
 }
 
-body > header nav {
+/* Body / Header Rules */
+
+body > header > nav {
     float: right;
-    padding-bottom: 1em;
+    
     margin-left: 3em;
+    padding-bottom: 1em;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+body.loggedin > header > nav > ul {
+    margin-top: 1em;
 }
 
-body:not(.loggedin) > header nav ul li {
+body:not(.loggedin) > header > nav > ul > li {
     display: inline-block;
+    
     margin-left: 0.5em;
 }
 
-button {
+body > article > header > nav {
+    width: 100%;
+}
+
+body > article > header > nav > form {
+    display: inline-block;
+}
+
+body > article > header > nav > ul {
+    margin-bottom: 1em;
+}
+
+li.active {
+    font-weight: bold;
+}
+
+/* Fieldsets */
+
+fieldset {
+    border-color: rgba(76, 54, 57, 0.31);
+    border-width: 0.08em;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+fieldset > label {
+    display: block;
+    
+    line-height: 1.8em;
+    
+    margin-bottom: 1em;
+}
+
+fieldset > label:last-of-type {
+    margin-bottom: 0;
+}
+
+fieldset > label > small {
+    display: block;
+}
+
+fieldset > button {
+    margin-top: 1em;
+}
+
+fieldset.inline {
+    border-style: none;
+    
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+fieldset.inline > label {
+    display: inline;
+}
+
+fieldset.outer {
+    border-style: none;
+    
+    margin: 0;
+    padding: 0;
+}
+
+fieldset.outer > legend {
+    display: block;
+    
+    font-weight: bold;
+    font-size: 1.6em;
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+fieldset.outer > button {
+    margin-top: 1.4em;
+}
+
+/* Form Elements / Inputs */
+
+input, select, textarea {
+    border: 0.08em rgba(76, 54, 57, 0.5) solid;
+    border-radius: 0.3em;
+    
+    font-size: 1.1em;
+    
+    padding: 0.2em;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4C3639;
+}
+
+input[type="number"] {
+    width: 3em;
+}
+
+input[type="file"] {
+    margin-bottom: 0.4em;
+}
+
+textarea {
+    height: 6em;
+    width: 24em;
+}
+
+/* Buttons */
+
+button, .button {
+    display: inline-block;
+    
     cursor: pointer;
+    
     background-color: #F3F4E5;
     background-image: linear-gradient(to bottom, #F3F4E5, #E2E3D9);
-    font-size: 1.4em;
-    padding: 0.5em 1em;
+    color: #4C3639;
+    text-decoration: none;
+    text-shadow: 0px 1px #b4a7a9;
+    
     border: 0.08em #4C3639 solid;
     border-radius: 0.8em;
-    color: #4C3639;
-    text-shadow: 0px 1px #b4a7a9;
+    
+    font-size: 1.4em;
+    
+    padding: 0.5em 1em;
 }
 
-button.mini {
-    font-size: 1.1em;
-    padding: 0.3em 0.8em;
+button.mini, .button.mini {
     border-radius: 0.4em;
+    
+    font-size: 1.1em;
+    
+    padding: 0.3em 0.8em;
 }
 
-button:hover {
+button:hover, .button:hover {
     background-color: #FEFFEE;
     background-image: linear-gradient(to bottom, #FEFFEE, #E3E5D6);
 }
 
-button:active {
+button:active, .button:active {
     background-image: linear-gradient(to top, #F3F4E5, #E2E3D9);
 }
 
-button.primary {
-    text-shadow: 0px 1px black;
+button.primary, .button.primary {
     background-color: #F5A630;
     background-image: linear-gradient(to bottom, #F5A630, #D65B22);
     color: white;
+    text-shadow: 0px 1px black;
+    
     border-color: #d42d2d;
 }
 
-button.primary:hover {
+button.primary:hover, .button.primary:hover {
     background-color: #F8C373;
     background-image: linear-gradient(to bottom, #F8C373, #F08655);
 }
 
-button.primary:active {
+button.primary:active, .button.primary:active {
     background-image: linear-gradient(to top, #F5A630, #D65B22);
 }
 
-body > article > header nav form {
-    display: inline-block;
+button.accept, .button.accept {
+    background-color: #0fa715;
+    background-image: linear-gradient(to bottom, #0fa715, #06694a);
+    color: white;
+    text-shadow: 0px 1px black;
+    
+    border-color: #034e37;
 }
+
+button.accept:hover, .button.accept:hover {
+    background-color: #8acb31;
+    background-image: linear-gradient(to bottom, #8acb31, #0c9145);
+}
+
+button.accept:active, .button.accept:active {
+    background-image: linear-gradient(to bottom, #06694a, #0fa715);
+}
+
+button.decline, button.delete,
+.button.decline, .button.delete {
+    background-color: #a7260f;
+    background-image: linear-gradient(to bottom, #a7260f, #690a06);
+    color: white;
+    text-shadow: 0px 1px black;
+    
+    border-color: #4e0303;
+}
+
+button.decline:hover, button.delete:hover,
+.button.decline:hover, .button.delete:hover {
+    background-color: #c66836;
+    background-image: linear-gradient(to bottom, #c66836, #7b2b13);
+}
+
+button.decline:active, button.delete:active,
+.button.decline:active, .button.delete:active {
+    background-image: linear-gradient(to bottom, #690a06, #a7260f);
+}
+
+button.delete, .button.delete {
+    border-radius: 0.4em;
+    
+    font-size: 0.8em;
+    
+    margin-bottom: 0.8em;
+    padding: 0.4em 0.7em;
+}
+
+/* Tables */
 
 table {
     width: 100%;
+    
     margin-bottom: 2em;
 }
 
-table caption {
+caption {
     text-align: left;
+    
     font-weight: bold;
     font-size: 1.2em;
+    
     padding-bottom: 0.3em;
 }
 
@@ -138,96 +334,67 @@ td {
     text-align: center;
 }
 
-tbody tr:nth-child(odd) {
+tbody > tr:nth-child(odd) {
     background-color: #F3F9FC;
 }
 
-tbody tr:nth-child(even) {
+tbody > tr:nth-child(even) {
     background-color: #F9FDFF;
 }
 
-tr td:first-child {
+tr > td:first-child {
     text-align: left;
+    
     vertical-align: middle;
 }
 
-tr td:first-child img {
+tr > td:first-child img {
     margin-left: 1em;
     margin-right: 1em;
 }
-img{
-    width: 150px;
-    height: 150px;
-    vertical-align: middle;
+
+td.actions {
+    width: 9em;
 }
 
-fieldset {
-    border-color: rgba(76, 54, 57, 0.31);
-    border-width: 0.08em;
-    margin-bottom: 2em;
+td.actions button, td.actions .button {
+    width: 5em;
+    
+    margin: 0.2em;
 }
 
-fieldset.alignfields label {
-    display: block;
-    float: left;
-    clear: left;
-    width: 6em;
-    text-align: right;
-    padding-bottom: 0.7em;
-    padding-top: 0.36em;
+/* Game Widget */
+
+.gamewidget {
+    display: inline-flex;
+    align-items: center;
+    
+    clear: both;
 }
 
-input, select, textarea {
-    padding: 0.2em;
-    border: 0.08em rgba(76, 54, 57, 0.5) solid;
-    border-radius: 0.3em;
-    font-size: 1.1em;
+.gamewidget > nav > a {
+    font-size: 1.5em;
 }
 
-fieldset.alignfields input, fieldset.alignfields select,
-fieldset.alignfields textarea {
-    display: block;
-    float: left;
-    margin-left: 0.6em;
+.gamewidget img {
+    display: inline-block;
+    
+    margin-right: 1em;
 }
 
-input:focus, select:focus, textarea:focus {
-    border-color: #4C3639;
-}
-
-fieldset.alignfields button {
-    display: block;
-    float: left;
-    clear: left;
-    margin-top: 0.5em;
-    margin-left: 6em;
-}
-
-fieldset.outer.alignfields button {
-    margin-left: 5em;
-}
-
-li.active {
-    font-weight: bold;
-}
-
-body > article > header nav {
-    width: 100%;
-}
-
-body > article > header nav ul {
-    margin-bottom: 1em;
-}
-
-body.loggedin > header nav ul {
+.gamewidget ul {
     margin-top: 1em;
 }
 
+/* Invitation */
+
 #invitation {
-    text-align: center;
-    margin: 3em 5em;
-    border: 1px dashed #63B4C9;
     background-color: #fffff9;
+    text-align: center;
+    
+    border: 1px dashed #63B4C9;
+    
+    margin: 3em 5em;
 }
 
 #invitation button {
@@ -235,38 +402,14 @@ body.loggedin > header nav ul {
     margin-right: 0.15em;
 }
 
-button.accept {
-    text-shadow: 0px 1px black;
-    background-color: #0fa715;
-    background-image: linear-gradient(to bottom, #0fa715, #06694a);
-    color: white;
-    border-color: #034e37;
-}
-
-button.accept:hover {
-    background-color: #8acb31;
-    background-image: linear-gradient(to bottom, #8acb31, #0c9145);
-}
-
-button.accept:active {
-    background-image: linear-gradient(to bottom, #06694a, #0fa715);
-}
-
-button.decline, button.delete {
-    text-shadow: 0px 1px black;
-    background-color: #a7260f;
-    background-image: linear-gradient(to bottom, #a7260f, #690a06);
-    color: white;
-    border-color: #4e0303;
-}
-
-button.decline:hover, button.delete:hover {
-    background-color: #c66836;
-    background-image: linear-gradient(to bottom, #c66836, #7b2b13);
-}
-
-button.decline:active, button.delete:active {
-    background-image: linear-gradient(to bottom, #690a06, #a7260f);
+#inviteschedule {
+    background-color: #fffff9;
+    
+    border: 1px dashed #63B4C9;
+    
+    float: right;
+    
+    padding: 0.5em 2em;
 }
 
 p.accepted {
@@ -279,142 +422,95 @@ p.declined {
     font-weight: bold;
 }
 
-button.delete {
-    font-size: 0.8em;
-    padding: 0.4em 0.7em;
-    margin-bottom: 0.8em;
-    border-radius: 0.4em;
-}
-
-fieldset.outer {
-    border-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-fieldset.outer > legend {
-    display: block;
-    font-weight: bold;
-    font-size: 1.6em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-td.actions {
-    width: 9em;
-}
-
-td.actions button {
-    width: 5em;
-    margin: 0.2em;
-}
-
-p.recommend {
-    font-size: 1.4em;
-}
-
-ul.recommendations {
+#invitationform fieldset {
     margin-bottom: 2em;
 }
 
-ul.recommendations li {
+/* Recommended Games */
+
+#recommendedgames > header > p {
+    font-size: 1.4em;
+}
+
+#recommendedgames > ul {
+    margin-bottom: 2em;
+}
+
+#recommendedgames > ul > li {
     display: block;
-    border: 1px dashed #63B4C9;
+    
     background-color: #fffff9;
+    
+    border: 1px dashed #63B4C9;
+    
     margin: 1em 2em;
     padding: 2em;
 }
 
-#addrecommendation {
+#recommendedgames > footer {
+    text-align: center;
+    
     margin: 1em 2em;
+}
+
+#recommendedgames > footer input {
     text-align: center;
-}
-
-#addrecommendation fieldset {
-    padding: 0.8em;
-}
-
-#addrecommendation legend {
-    font-weight: bold;
-}
-
-#addrecommendation div {
-    padding: 0.4em;
-}
-
-#addrecommendation input {
+    
     width: 100%;
-    text-align: center;
+    
+    margin-top: 0.4em;
 }
 
-.gamewidget {
-    clear: both;
-    display: inline-flex;
-    align-items: center;
-}
+/* Login / Register */
 
-.gamewidget > nav > a {
-    font-size: 1.5em;
-}
-
-.gamewidget img {
-    display: inline-block;
-    margin-right: 1em;
-}
-
-.gamewidget ul {
-    margin-top: 1em;
-}
-
-.credentials {
-    margin-top: 6em;
+#credentials {
     display: flex;
     justify-content: center;
+    
+    margin-top: 6em;
 }
 
-fieldset.personalinfo {
+/* Game Page */
+
+#personalinfo {
     float: right;
+    
     margin: 2em;
     margin-top: 0;
     margin-right: 0;
 }
 
-fieldset.personalinfo div {
-    padding: 0.2em;
+#personalinfo label {
+    margin-bottom: 0;
 }
 
-fieldset.personalinfo input[type="number"] {
-    width: 2em;
-    margin-left: 0.25em;
+#playstatus {
+    border-style: none;
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
 }
 
-fieldset.personalinfo div:first-of-type {
-    padding-bottom: 0.6em;
+/* Game List Pages */
+
+#gameslist nav {
+    float: left;
+    clear: right;
+    
+    margin-top: 2em;
 }
 
-fieldset.personalinfo div:last-of-type {
-    padding-top: 0.6em;
-}
-
-dl {
-    display: block;
-}
-
-dt {
-    font-weight: bold;
-}
-
-dd {
-    margin-bottom: 1em;
-}
-
-#inviteschedule {
+#gameslist ul {
     float: right;
-    padding: 0.5em 2em;
-    border: 1px dashed #63B4C9;
-    background-color: #fffff9;
 }
 
-input[type="file"] {
-    margin-bottom: 0.4em;
+#gameslist details {
+    float: left;
+    
+    margin-bottom: 2em;
+}
+
+#gameslist summary {
+    margin-bottom: 1em;
 }
