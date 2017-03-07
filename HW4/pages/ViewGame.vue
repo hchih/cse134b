@@ -35,11 +35,11 @@
       <dd v-if="rulesSummary" class="summary">{{ rulesSummary }}</dd>
     </dl>
     <footer v-if="user">
-      <router-link :class="{ button: true, mini: true, disabled: loading }"
-                   :to="'/game/' + gameKey + '/edit'">
+      <a :class="{ button: true, mini: true, declue: true, disabled: loading }"
+         v-on:click.prevent="edit">
         Edit Info
-      </router-link>
-      <a :class="{button: true, mini: true, decline: true, disabled: loading}"
+      </a>
+      <a :class="{ button: true, mini: true, decline: true, disabled: loading }"
          v-on:click.prevent="del">
         Delete Game
       </a>
@@ -102,6 +102,11 @@
       }
     },
     methods: {
+      edit: function () {
+        if (!this.loading) {
+          this.$router.push('/game/' + this.gameKey + '/edit');
+        }
+      },
       del: function () {
         if (this.loading) {
           return;

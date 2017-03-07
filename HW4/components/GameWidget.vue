@@ -27,8 +27,11 @@
   export default {
     props: ['firebaseStorage', 'gameKey', 'name', 'officialSite', 'amazonLink'],
     data: function () {
+      // Guess at photo URL before acquiring it definitively from Firebase, to
+      // speed up time-to-content for the user.
       return {
-        photoUrl: null
+        photoUrl: 'https://firebasestorage.googleapis.com/v0/b/boardgamedex.appspot.com/o/' +
+                  'game-photos%2F' + escape(this.gameKey) + '?alt=media'
       };
     },
     mounted: function () {

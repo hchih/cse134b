@@ -266,7 +266,7 @@ button:active, .button:active {
 
   text-shadow: none !important;
 
-  cursor: pointer !important;
+  cursor: default !important;
 }
 
 button.primary, .button.primary {
