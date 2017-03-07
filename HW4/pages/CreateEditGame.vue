@@ -235,17 +235,25 @@
           }).bind(this));
       },
       ensureRangeConsistency: function (start, end) {
+        var startValidity = '';
+        var endValidity = '';
+
         if (!this[start] && this[end]) {
-          this.$refs[start].setCustomValidity('Specify both start and end, or neither');
-        } else {
-          this.$refs[start].setCustomValidity('');
+          startValidity = 'Specify both start and end, or neither';
         }
 
         if (this[start] && !this[end]) {
-          this.$refs[end].setCustomValidity('Specify both start and end, or neither');
-        } else {
-          this.$refs[end].setCustomValidity('');
+          endValidity = 'Specify both start and end, or neither';
         }
+
+        var startInt = parseInt(this[start]);
+        var endInt = parseInt(this[end]);
+        if (startInt && endInt && startInt > endInt) {
+          startValidity = 'Start of range cannot be greater than end';
+        }
+
+        this.$refs[start].setCustomValidity(startValidity);
+        this.$refs[end].setCustomValidity(endValidity);
       },
       deletePhoto: function () {
         if (!this.loading && this.gameKey) {
